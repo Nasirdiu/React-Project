@@ -9,11 +9,12 @@ const Navbar = () => {
     <div className="text-white flex justify-between items-center h-24 max-w-[1240px] mx-auto p-4">
       <h1 className="w-full text-3xl font-bold text-[#00df9a]">REACT.</h1>
       <ul className="hidden md:flex">
-        <li className="p-4">Home</li>
-        <li className="p-4">Company</li>
-        <li className="p-4">Resources</li>
-        <li className="p-4">About</li>
-        <li className="p-4">Contact</li>
+        <a href="#"><li className="p-4">Home</li></a>
+        <a href="#"><li className="p-4">Company</li></a>
+        <a href="#"><li className="p-4">Resources</li></a>
+        <a href="#"><li className="p-4">About</li></a>
+        <a href="#"><li className="p-4">Contact</li></a>
+        
       </ul>
       <div onClick={handleNav} className="block md:hidden">
         {nav ? (
@@ -22,7 +23,7 @@ const Navbar = () => {
           <AiOutlineMenu size={20} />
         )}
       </div>
-
+          
       <ul
         className={
           nav
@@ -31,11 +32,12 @@ const Navbar = () => {
         }
       >
         <h1 className="w-full text-3xl font-bold text-[#00df9a] m-4">REACT.</h1>
-        <li className="p-4 border-b border-gray-600">Home</li>
-        <li className="p-4 border-b border-gray-600">Company</li>
-        <li className="p-4 border-b border-gray-600">Resources</li>
-        <li className="p-4 border-b border-gray-600">About</li>
-        <li className="p-4">Contact</li>
+        <a href="#"><li className="p-4 border-b border-gray-600">Home</li></a>
+        <a href="#"><li className="p-4 border-b border-gray-600">Company</li></a>
+        <a href="#"><li className="p-4 border-b border-gray-600">Resources</li></a>
+        <a href="#"><li className="p-4 border-b border-gray-600">About</li></a>
+        <a href="#"> <li className="p-4">Contact</li></a>
+       
       </ul>
     </div>
   );
