@@ -7,8 +7,11 @@ import Navbar from "./components/Navbar";
 import Newsletter from "./components/Newsletter";
 
 function App() {
+  const copyText=()=>{
+    alert('No Text Copy Ok')
+  }
   return (
-    <div>
+    <div onCopy={copyText}>
       <Navbar />
       <Hero />
       <Analytics/>
